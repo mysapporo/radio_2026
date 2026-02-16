@@ -1,102 +1,95 @@
-{\rtf1\ansi\ansicpg932\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番組アーカイブ</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f2f2f7;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container { width: 100%; max-width: 600px; }
+        .program-header { text-align: center; margin-bottom: 30px; }
+        .program-title { font-size: 1.5rem; font-weight: bold; margin: 0; }
+        .corner-title { font-size: 1rem; color: #8e8e93; margin-top: 5px; }
+        .day-card {
+            background: white; padding: 20px; border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 20px;
+        }
+        .day-label {
+            font-size: 1.1rem; font-weight: bold; margin: 0 0 10px 0;
+            border-left: 5px solid #007aff; padding-left: 10px;
+            display: flex; justify-content: space-between;
+        }
+        .date-info { font-size: 0.8rem; color: #8e8e93; font-weight: normal; }
+        audio { width: 100%; outline: none; margin-top: 10px; }
+    </style>
+</head>
+<body>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="ja">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>\uc0\u30058 \u32068 \u12450 \u12540 \u12459 \u12452 \u12502 </title>\
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>\
-    <style>\
-        body \{\
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;\
-            background-color: #f2f2f7;\
-            display: flex;\
-            justify-content: center;\
-            min-height: 100vh;\
-            margin: 0;\
-            padding: 20px;\
-            color: #333;\
-        \}\
-        .container \{ width: 100%; max-width: 600px; \}\
-        .program-header \{ text-align: center; margin-bottom: 30px; \}\
-        .program-title \{ font-size: 1.5rem; font-weight: bold; margin: 0; \}\
-        .corner-title \{ font-size: 1rem; color: #8e8e93; margin-top: 5px; \}\
-        .day-card \{\
-            background: white; padding: 20px; border-radius: 12px;\
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 20px;\
-        \}\
-        .day-label \{\
-            font-size: 1.1rem; font-weight: bold; margin: 0 0 10px 0;\
-            border-left: 5px solid #007aff; padding-left: 10px;\
-            display: flex; justify-content: space-between;\
-        \}\
-        .date-info \{ font-size: 0.8rem; color: #8e8e93; font-weight: normal; \}\
-        audio \{ width: 100%; outline: none; margin-top: 10px; \}\
-    </style>\
-</head>\
-<body>\
-\
-    <div class="container">\
-        <div class="program-header">\
-            <h1 class="program-title">FM NORTH WAVE\uc0\u12304 cottonsky\u12305 </h1>\
-            <p class="corner-title">\uc0\u12300 taste the sky\u12301 \u12490 \u12499 \u12466 \u12540 \u12479 \u12540 \u65306 \u12431 \u12383 \u12394 \u12409 \u12422 \u12358 \u12363 \u12288 \u12466 \u12473 \u12488 \u65306 \u38518 \u23665 \u20581 \u20154 \u65288 SU Channel)</p>\
-        </div>\
-\
-        <div class="day-card">\
-            <h3 class="day-label">\
-                \uc0\u26376 \u26332 \u26085 \
-                <span class="date-info">2026.2.16 \uc0\u25918 \u36865 \u20998 </span>\
-            </h3>\
-            <audio class="hls-player" controls data-src="index.m3u8"></audio>\
-        </div>\
-\
-\
-        <div class="day-card" style="display:none;">\
-            <h3 class="day-label">\
-                \uc0\u28779 \u26332 \u26085 \
-                <span class="date-info">2026.2.17 \uc0\u25918 \u36865 \u20998 </span>\
-            </h3>\
-            <audio class="hls-player" controls data-src="tue.m3u8"></audio>\
-        </div>\
-\
-\
-        <div class="day-card" style="display:none;">\
-            <h3 class="day-label">\
-                \uc0\u27700 \u26332 \u26085 \
-                <span class="date-info">2026.2.18 \uc0\u25918 \u36865 \u20998 </span>\
-            </h3>\
-            <audio class="hls-player" controls data-src="wed.m3u8"></audio>\
-        </div>\
-\
-\
-        <div class="day-card" style="display:none;">\
-            <h3 class="day-label">\
-                \uc0\u26408 \u26332 \u26085 \
-                <span class="date-info">2026.2.19 \uc0\u25918 \u36865 \u20998 </span>\
-            </h3>\
-            <audio class="hls-player" controls data-src="thu.m3u8"></audio>\
-        </div>\
-\
-    </div>\
-\
-    <script>\
-        var players = document.querySelectorAll('.hls-player');\
-        players.forEach(function(audio) \{\
-            var source = audio.getAttribute('data-src');\
-            if (Hls.isSupported()) \{\
-                var hls = new Hls();\
-                hls.loadSource(source);\
-                hls.attachMedia(audio);\
-            \} else if (audio.canPlayType('application/vnd.apple.mpegurl')) \{\
-                audio.src = source;\
-            \}\
-        \});\
-    </script>\
-</body>\
-</html>}
+    <div class="container">
+        <div class="program-header">
+            <h1 class="program-title">FM NORTH WAVE 特別番組</h1>
+            <p class="corner-title">ゲストトーク：○○さんの回</p>
+        </div>
+
+        <div class="day-card">
+            <h3 class="day-label">
+                月曜日
+                <span class="date-info">2/16 放送分</span>
+            </h3>
+            <audio class="hls-player" controls data-src="mon.m3u8"></audio>
+        </div>
+
+
+        <div class="day-card" style="display:none;">
+            <h3 class="day-label">
+                火曜日
+                <span class="date-info">2/17 放送分</span>
+            </h3>
+            <audio class="hls-player" controls data-src="tue.m3u8"></audio>
+        </div>
+
+
+        <div class="day-card" style="display:none;">
+            <h3 class="day-label">
+                水曜日
+                <span class="date-info">2/18 放送分</span>
+            </h3>
+            <audio class="hls-player" controls data-src="wed.m3u8"></audio>
+        </div>
+
+
+        <div class="day-card" style="display:none;">
+            <h3 class="day-label">
+                木曜日
+                <span class="date-info">2/19 放送分</span>
+            </h3>
+            <audio class="hls-player" controls data-src="thu.m3u8"></audio>
+        </div>
+
+    </div>
+
+    <script>
+        var players = document.querySelectorAll('.hls-player');
+        players.forEach(function(audio) {
+            var source = audio.getAttribute('data-src');
+            if (Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource(source);
+                hls.attachMedia(audio);
+            } else if (audio.canPlayType('application/vnd.apple.mpegurl')) {
+                audio.src = source;
+            }
+        });
+    </script>
+</body>
+</html>
